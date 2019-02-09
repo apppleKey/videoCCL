@@ -1,0 +1,160 @@
+.video-js {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.vjs-paused .vjs-big-play-button,
+.vjs-paused.vjs-has-started .vjs-big-play-button {
+    display: block;
+
+}
+
+
+.video-js .vjs-big-play-button {
+    font-size: 2.5em;
+    line-height: 2.3em;
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 2.5em;
+    background-color: #73859f;
+    background-color: rgba(115, 133, 159, .5);
+    border-width: 0.15em;
+    margin-top: -1.25em;
+    margin-left: -1.75em;
+    border-color: #ff3341;
+    color: #ff3341;
+    top: 50%;
+    left: 50%;
+    z-index: 200;
+}
+
+/* 中间的播放箭头 */
+.vjs-big-play-button .vjs-icon-placeholder {
+    font-size: 1.63em;
+}
+
+/* 加载圆圈 */
+.vjs-loading-spinner {
+    font-size: 2.5em;
+    width: 2em;
+    height: 2em;
+    border-radius: 1em;
+    margin-top: -1em;
+    margin-left: -1.5em;
+    /* background-color: #ff3341; */
+}
+
+/* .video-js .vjs-control#{
+    width: auto;
+} */
+.video-js .vjs-control-bar {
+    /* color: #ff3341; */
+    z-index: 10;
+}
+
+.video-js.vjs-playing .vjs-tech {
+    pointer-events: auto;
+}
+
+.vjs-text-track-display {
+    z-index: 9;
+}
+
+.video-js .vjs-control:focus::before,
+.video-js .vjs-control:hover::before,
+.video-js .vjs-control:focus {
+    text-shadow: 0em 0em 0em white;
+}
+
+.ex-container {
+    width: 100%;
+    height: 400px;
+    background-color: black;
+}
+
+
+#danmu {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+/* 弹幕按钮 */
+#danmu-swh-btn-ct {
+    cursor: pointer;
+    width: auto;
+}
+
+.danmu-swh-btn {
+    margin-top: 4px;
+    
+    display: block;
+    width: 80px;
+    /* background-color: rgb(184, 184, 184); */
+    height: 20px;
+    border-radius: 10px;
+    line-height: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.danmu-swh-btn.show {
+    background-color: white;
+}
+
+.danmu-swh-btn.hide {
+    background-color: rgb(199, 199, 199);
+}
+
+.danmu-swh-btn i {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    font-style: normal;
+    position: absolute;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    background-color: #ff3341;
+}
+
+.danmu-swh-btn.show i {
+    left: 0px;
+}
+
+.danmu-swh-btn.hide i {
+    left: 60px;
+    background-color: gray;
+}
+
+.danmu-swh-btn i::before {
+    content: "弹幕开";
+    width: 56px;
+    height: 20px;
+    background-color: rgb(253, 253, 253);
+    color: #ff3341;
+    position: absolute;
+    right: -56px;
+    /* text-align: left; */
+    /* text-indent: .5rem ; */
+}
+
+.danmu-swh-btn i::after {
+    content: "弹幕关";
+    width: 56px;
+    height: 20px;
+    background-color: rgb(199, 199, 199);
+    color: rgb(63, 62, 62);
+    position: absolute;
+    left: -56px;
+    /* text-align: left; */
+    /* text-indent: .5rem ; */
+
+}
+
+button {
+    outline: none;
+}
